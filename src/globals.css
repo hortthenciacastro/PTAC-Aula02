@@ -1,25 +1,23 @@
 header{
     height: 100px; 
-    color: black;
-    background-color: #ed5c5c;
+    color: rgb(255, 255, 255);
+    background-color: #5b46b9;
     padding: 10px;
     border-radius: 5px;
-    font-family: 'Arial', sans-serif; 
+    font-family: Artifakt Element Heavy; 
     text-align: center; 
 }
 footer{
     height:100px;
-    background-color: #ed5c5c;
-    color: black;
+    background-color: #341ba4;
+    color: rgb(255, 255, 255);
     border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none; 
-    display: inline-block;
-    font-size: 16px; 
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 8px;
+    text-align: center; 
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px; 
+    margin-top: 700px;
+   
 
 }
 

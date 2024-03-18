@@ -1,7 +1,7 @@
 export default function Footer () {
     return (
         <footer>
-        <p>Desenvolvedor: Hortthencia Castro</p>
+        <p>Desenvolvido por Hortthencia Castro</p>
         </footer>
     )
 }

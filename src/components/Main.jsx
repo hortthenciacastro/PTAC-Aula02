@@ -3,18 +3,31 @@ import { useState } from "react";
 export default function Main(){
     const[nome, setNome] = useState("");
     const[telefone, setTelefone] = useState("");
+      const[listaContatos, setListaContatos] = useState([])
+      const registrar = (event) => {
+
+        event.preventDefault();
+ setListaContatos([...listaContatos,
+    {
+       nomeSalvo: nome,
+       telefoneSalvo: telefone
+    }
+]);
+};
+
+console.table(listaContatos)
     
     return(
         <main>
-            <form>
-                <label> nome
+            <form action="">
+                <label htmlFor="nome">Nome:</label>
             <input
             type="text"
             name="nome-contato"
             id="nome"
             onChange={(event)=> setNome(event.target.value)}
             />
-            </label>
+            </form>
             {nome}
 
            <label> telefone
@@ -27,7 +40,6 @@ export default function Main(){
             </label>
             {telefone}
             <button> Enviar </button>
-            </form>
-        </main>
-    )
+            </main>
+    );
 }

@@ -38,6 +38,13 @@ console.table(listaContatos);
             onChange={(event)=> setTelefone(event.target.value)}
             />
             </label>
+
+            <label>Idade: 
+                <input type="number" 
+                name="idade-contato" 
+                id="idade" value={idade} 
+                onChange={ (event) => setIdade(event.target.value)}
+                ></input></label>  
         
             <button> Enviar </button>
             </main>
